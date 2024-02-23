@@ -9,7 +9,8 @@ class Esferav{
     }
 
 calcularvolumeEsfera(){
-    respostaesfera = "O volume da sua esfera é de: "+ volumeesfera +"cm³."
+    respostaesfera = "O volume da sua esfera é de: "+ this.volumeesfera.toFixed(2) +"cm³."
 
+console.log(respostaesfera)
 }
 }
