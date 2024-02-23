@@ -13,3 +13,18 @@ const esferaa = new Esferav(raioesfera, volumeesfera)
 let resultadoEsfera = esferaa.calcularvolumeEsfera()
 respostaesfera.innerHTML += (resultadoEsfera)
 })
+
+let respostapiramide = document.getElementById("respostapiramide")
+let calcularpiramide = document.getElementById("calcularpiramide")
+
+calcularpiramide.addEventListener("click", ()=>{
+
+let areabasepiramide = Number(document.getElementById("raioesfera").value)    
+let alturapiramide = Number(document.getElementById("raioesfera").value)    
+let volumepiramide = 0
+
+const piramidee = new Piramidev(areabasepiramide, alturapiramide, volumepiramide)
+
+let resultadoPiramide = piramidee.calcularvolumePiramide()
+respostapiramide.innerHTML += (resultadoPiramide)
+})
